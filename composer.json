@@ -1,0 +1,34 @@
+{
+    "name": "uccu/dmcat2-http",
+    "description": "The dmcat2 framework's http module",
+    "keywords": [
+        "dmcat2",
+        "http",
+        "request",
+        "response",
+        "pzcat"
+    ],
+    "homepage": "https://github.com/uccu/dmcat2-http",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "pzcat",
+            "email": "cat@4moe.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "psr/http-message": "1.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uccu\\Dmcat2Http\\": "src/"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
