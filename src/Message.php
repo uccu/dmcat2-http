@@ -27,10 +27,13 @@ class Message implements MessageInterface
 
     public  function hasHeader($name)
     {
+        $headers = $this->getHeaders();
+        return isset($headers[$name]) ? true : false;
     }
 
     public function getHeader($name)
     {
+        return $this->getHeaders()[$name] ?? null;
     }
 
     public function getHeaderLine($name)
